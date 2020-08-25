@@ -552,6 +552,11 @@ p.no-margin {
 
     .item-container {
         width: 100%;
+        text-align: center;
+    }
+    .item-container .item {
+        display: inline-block;
+        text-align: left;
     }
 
 
