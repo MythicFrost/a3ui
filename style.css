@@ -2,7 +2,7 @@
 
 body {
     font-size: 10px;
-    font-family: "Open Sans";
+    font-family: "Calibri", "Roboto";
     font-weight: 300;
     margin: 0;
     background: white;
@@ -36,7 +36,6 @@ h1, h2, h3 {
     font-weight: 400;
     margin-top: 0;
 }
-
 h1 {
     font-size: 2.5rem;
 }
@@ -56,6 +55,18 @@ h3 {
     height: 100vh;
 }
 
+.header.signup {
+    height: 1000px;
+}
+
+.header.overview {
+    height: 150px;
+}
+
+.header.overview .top-section .wrap {
+    border-bottom: none;
+}
+
 .header > img {
     position: relative;
     z-index: 0;
@@ -64,6 +75,8 @@ h3 {
     font-weight: 400;
     padding: 10px;
     padding-bottom: 5px;
+    max-width: 600px;
+    text-align: justify;
 }
 .top-menu {
     height: 100%;
@@ -71,7 +84,7 @@ h3 {
     object-fit: cover;
     object-position: 50% 50%;
 }
-.header > .wrap {
+.header > .wrap-how-work {
     position: absolute;
     z-index: 999;
     top: 50%;
@@ -83,6 +96,7 @@ h3 {
 .logo {
     margin-bottom: 60px;
     max-width: 400px;
+    max-height: 100%;
 }
 
 .get-started {
@@ -130,13 +144,48 @@ h3 {
     margin-right: 8%;
 }
 
+/* menu */
+
+.menu a {
+    color: white;
+}
+
+.menu li {
+    list-style-type: none;
+    float: left;
+    margin-right: 15px;
+    margin-top: 20px;
+}
+.menu li:last-of-type {
+    margin-right: 0;
+}
+.menu {
+    float: right;
+}
+
 
 /* -------- # -------- */
+
+.top-section {
+    margin-top: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100px;
+    width: 100%;
+    text-align: left;
+}
+
+.top-section .wrap {
+    height: 100%;
+}
 
 .block {
     padding-top: 50px;
     padding-bottom: 50px;
 }
+
+
 
 .features {
     color: white;
@@ -144,16 +193,231 @@ h3 {
 }
 
 
-.ideal-jobs {
-
+.top-section .wrap {
+    padding-bottom: 20px;
+    border-bottom: 4px solid white;
+}
+.how-work {
+    background: #033E67;
+    color: white;
 }
 
+.how-work li {
+    margin-bottom: 10px;
+}
 
 .footer {
     width: 100%;
-    height: 65px;
     background: #0D2432;
+    color: white;
+    text-align: left;
+    padding-top: 20px;
 }
+.footer a {
+    color: white;
+}
+.footer li {
+    list-style-type: none;
+}
+.footer ul {
+    padding-left: 0;
+}
+
+.footer .footer-group {
+    width: 25%;
+}
+
+.sep {
+    width: 100%;
+    height: 4px;
+    margin: 30px 0;
+}
+.sep.white {
+    background: white;
+}
+.sep.black {
+    background: black;
+}
+
+.chart {
+    margin-bottom: 20px;
+}
+
+.trading-plan-section {
+    margin-bottom: 80px;
+}
+
+.signup-btn {
+    background: #0D2432;
+    color: white;
+    width: 200px;
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px;
+}
+.signup-btn:hover, .signup-btn:focus {
+    color: white;
+    cursor: pointer;
+}
+
+.signup-section {
+    position: absolute;
+    z-index: 999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+    color: black;
+    border-radius: 20px;
+    background: white;
+    /* padding: 0 80px; */
+    text-align: center;
+    width: 600px;
+    max-width: 90%;
+    
+}
+.signup-section input {
+    padding: 12px;
+    border-radius: 10px;
+    background: #eee;
+    border: 1px solid #ccc;
+    width: 250px;
+}
+.wrap-signup {
+    padding: 40px;
+}
+.signup-text {
+    margin-right: 20px;
+}
+.wrap-signup .item {
+    margin-bottom: 12px;
+}
+.wrap-signup .item-container {
+    display: inline-block;
+    text-align: right;
+}
+
+.account-section h2 {
+    margin-bottom: 40px;
+}
+
+.account-section .item {
+    margin-bottom: 12px;
+}
+
+.account-section .item-container {
+    display: inline-block;
+    text-align: right;
+    margin-top: 20px;
+}
+
+.account-section input {
+    padding: 12px;
+    border-radius: 10px;
+    background: #eee;
+    border: 1px solid #ccc;
+    width: 250px;
+}
+
+
+h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+p.no-margin {
+    margin-bottom: 0;
+}
+
+
+/* --------  -------- */
+
+
+
+.trading-plan, .bundle-group {
+    background: #0D2432;
+    color: white;
+    padding: 20px;
+    display: inline-block;
+    border-radius: 10px;
+    width: 30%;
+    margin-right: 3.333%;
+}
+
+.trading-plan:last-of-type, .bundle-group:last-of-type {
+    margin-right: 0;
+}
+
+.trading-plan-section, .bundle-section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.btn-tp, .btn-bundle {
+    padding: 10px 20px;
+}
+
+.bundle-section {
+    margin-bottom: 40px;
+}
+
+/* --------  -------- */
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex-container .col {
+    width: 25%;
+}
+
+.flex-stocks, .flex-commodities {
+    margin-bottom: 20px;
+}
+
+.scc .sep {
+    margin-bottom: 80px;
+}
+
+.item-square {
+    width: 30px;
+    height: 30px;
+    background: #eee;
+    border-radius: 50%;
+    float: left;
+    margin-right: 10px;
+}
+
+
+
+.update-btn {
+    background: #0D2432;
+    color: white;
+    width: 200px;
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    display: inline-block;
+}
+.update-btn:hover, .update-btn:focus {
+    color: white;
+    cursor: pointer;
+}
+
+.btn-wrapper {
+    text-align: right;
+}
+
+
+
+.breadcrumb {
+    background: #eee;
+    padding: 5px 0;
+}
+
 
 /* -------- #fonts -------- */
 
@@ -183,6 +447,9 @@ h3 {
     .wrap {
         max-width: 900px;
     }
+    .btn-tp, .btn-bundle {
+        padding: 5px 10px;
+    }
 }
 
 @media screen and (max-width: 901px) {
@@ -190,11 +457,98 @@ h3 {
         max-width: 100%;
         padding: 0 20px;
     }
+    .wrap-how-work {
+        width: 70%;
+    }
+
+
+
+    .account-section .item-container {
+        display: inline-block;
+        text-align: left;
+    }
+    .account-section .signup-text {
+        display: block;
+    }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 750px) {
     .tm-image-medium {
         float: none;
         margin-bottom: 20px;
     }
+    .wrap-signup .item-container {
+        display: inline-block;
+        text-align: left;
+    }
+    .wrap-signup .signup-text {
+        display: block;
+    }
+
+
+
+    .top-section {
+        height: 150px;
+        text-align: center;
+    }
+
+    .logo {
+        text-align: center;
+        max-height: 100px;
+        margin-bottom: 0;
+    }
+
+    .menu {
+        margin-top: 0;
+        float: none;
+        display: block;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .menu li {
+        float: none;
+        display: inline-block;
+    }
+
+    .wrap-how-work {
+        margin-top: 60px;
+    }
+
+    .wrap-how-work {
+        width: 90%;
+    }
+
+    .one-half {
+        width: 100%;
+        float: none;
+    }
+
+    .flex-container .col {
+        width: 50%;
+    }
+
+    .flex-container .col3, .flex-container .col4 {
+        margin-top: 40px;
+    }
+
+    .trading-plan, .bundle-group {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+    .trading-plan:lst-of-type, .bundle-group:last-of-type {
+        margin-bottom: 0;
+    }
+
+
+    .account-section input {
+        width: 100%;
+    }
+
+    .item-container {
+        width: 100%;
+    }
+
+
 }
