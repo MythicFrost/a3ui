@@ -263,9 +263,9 @@ h3 {
 .signup-section {
     position: absolute;
     z-index: 999;
-    top: 50%;
+    top: 250px;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
     padding: 0;
     color: black;
     border-radius: 20px;
