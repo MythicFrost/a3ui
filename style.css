@@ -550,10 +550,12 @@ p.no-margin {
         width: 100%;
     }
 
-    .item-container {
+    .wrap-signup .item-container {
+        display: inline-block;
         width: 100%;
         text-align: center;
     }
+
     .item-container .item {
         display: inline-block;
         text-align: left;
