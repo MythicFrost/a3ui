@@ -344,6 +344,10 @@ p.no-margin {
     margin-right: 3.333%;
 }
 
+.bundle-group:last-of-type {
+    margin-top: 40px;
+}
+
 .trading-plan:last-of-type, .bundle-group:last-of-type {
     margin-right: 0;
 }
